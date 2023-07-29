@@ -1,0 +1,112 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --background-root: #0e1525;
+  --background-default: #1c2333;
+  --background-higher: #2b3245;
+  --background-highest: #3c445c;
+  --background-overlay: #0e1525a0;
+  --foreground-default: #f5f9fc;
+  --foreground-dimmer: #c2c8cc;
+  --foreground-dimmest: #9da2a6;
+  --outline-dimmest: #2b3245;
+  --outline-dimmer: #3c445c;
+  --outline-default: #4e5569;
+  --outline-stronger: #5f677a;
+  --outline-strongest: #70788c;
+  --accent-primary-dimmest: #004182;
+  --accent-primary-dimmer: #0053a6;
+  --accent-primary-default: #0079f2;
+  --accent-primary-stronger: #57abff;
+  --accent-primary-strongest: #b2d9ff;
+  --accent-positive-dimmest: #044a10;
+  --accent-positive-dimmer: #046113;
+  --accent-positive-default: #009118;
+  --accent-positive-stronger: #6cd97e;
+  --accent-positive-strongest: #bfffca;
+  --accent-negative-dimmest: #660000;
+  --accent-negative-dimmer: #a60808;
+  --accent-negative-default: #e52222;
+  --accent-negative-stronger: #ff6666;
+  --accent-negative-strongest: #ffcfcf;
+  --accent-yellow-dimmest: #4d4000;
+  --accent-yellow-dimmer: #635300;
+  --accent-yellow-default: #967d00;
+  --accent-yellow-stronger: #bfa730;
+  --accent-yellow-strongest: #f2e088;
+}
+
+body, html {
+  background: var(--background-default);
+  color: var(--foreground-default);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col.m4 > * {
+  margin-bottom: 4px;
+}
+
+.flex-col.m8 > * {
+  margin-bottom: 8px;
+}
+
+.flex-col.m16 > * {
+  margin-bottom: 16px;
+}
+
+.flex-col > *:last-child {
+  margin-bottom: 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row.m4 > * {
+  margin-right: 4px;
+}
+
+.flex-row.m8 > * {
+  margin-right: 8px;
+}
+
+.flex-row.m16 > * {
+  margin-right: 16px;
+}
+
+.flex-row > *:last-child {
+  margin-right: 0;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+p {
+  font-size: 14px;
+  color: var(--foreground-dimmer);
+}
+
+a {
+  color: var(--accent-primary-default);
+  text-decoration: none;
+}

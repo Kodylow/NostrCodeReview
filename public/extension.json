@@ -1,0 +1,42 @@
+{
+  "name": "Nostr.it",
+  "description": "A Nostr Vending Machine Client",
+  "tools": [
+    {
+      "name": "Nostr.it",
+      "icon": "/favicon.svg",
+      "handler": "/"
+    }
+  ],
+  "icon": "/favicon.svg",
+  "coverImages": null,
+  scopes: [
+
+    {
+      name: "read",
+      reason: "Read any file in your Repl"
+    },
+
+    {
+    name: "write-exec",
+    reason: "Write to any file in your Repl and execute any code"
+  },
+
+    {
+    name: "repldb:read",
+    reason: "Read any key, or list all keys under any prefix in the repldb belonging to your Repl"
+  },
+
+    {
+    name: "repldb:write",
+    reason: "Write or delete any key in the repldb belonging to your Repl"
+  },
+
+    {
+    name: "experimental-api",
+    reason: "Use experimental APIs that may be unstable, change in behavior, or be removed entirely"
+  }
+
+  ],
+  // For more info: https://docs.replit.com/extensions/api/manifest
+}
